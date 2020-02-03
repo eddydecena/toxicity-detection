@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Toxicity Detection</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="voice-to-text-box">
+            <p class="voice-to-text-show start_opacity" id="voice-to-text-show">
+                Press the button below to start toxicity detection
+            </p>
+        </div>
+        <div class="toxicity-result-box">
+            <p class="toxicity-result start_opacity" id="toxicity_result">
+                Toxicity result here
+            </p>
+        </div>
+        <button class="record-toggle-button" id="recording_button">
+            <img width="32" height="32" id="recording_icon" src="./assets/microphone.svg" alt="recording icon" />
+        </button>
+        <div class="footer">
+            <p class="footer_text">With ❤️ by <a href="https://github.com/eddynelson">Eddy Decena</a></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
