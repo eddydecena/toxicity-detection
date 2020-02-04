@@ -2,7 +2,7 @@
 
 Record your conversation and predict its toxicity. We do not take your conversation, everything runs on your browser, and you can see it in the previous code.
 
-Page of repo: TODO
+Page of repo: https://eddynelson.github.io/toxicity-detection/
 
 ## Run with docker
 
