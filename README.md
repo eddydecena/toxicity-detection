@@ -1,18 +1,26 @@
 # Toxicity Detection
 
-Record your conversation and predict its toxicity. We do not take your conversation, everything runs on your browser, and you can see it in the previous code.
+Record your conversation and detect its toxicity. 
 
-Page of repo: https://eddynelson.github.io/toxicity-detection/
+> Note: We do not save your conversation, everything runs on your browser and you can verify it in the code.
 
-## Run with docker
+Page of repo: `https://eddynelson.github.io/toxicity-detection/`
 
-``` sh
+## Build & Run with Docker
+
+```sh
+docker build -t toxicity-detection:1.0.0 .
+
 docker run -d -p 8080:80 --name toxicity-detection:1.0.0 toxicity_detection
 ```
 
-## Usage requirement
-To use this you need one of the following browsers: Chrome, Chrome for Android, Samsung Internet.
+## Requirements
 
-## Resouce
+To use it, you need one of the following browsers,
+  - [Chrome](https://www.google.com/chrome/)
+  - [Chrome for Android](https://play.google.com/store/apps/details?id=com.android.chrome&hl=en)
+  - [Samsung Internet](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser&hl=en)
 
-This implementation of toxicity detection if powered by tensorflow.js and based on the tensorflow.js [oficial model](https://github.com/tensorflow/tfjs-models/tree/master/toxicity)
+## Resources
+
+The Toxicity implementation is based and powered by [TensorFlow.js](https://www.tensorflow.org/js) [official model](https://github.com/tensorflow/tfjs-models/tree/master/toxicity)
